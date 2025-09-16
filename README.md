@@ -1,38 +1,23 @@
-![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/wokwi_test/badge.svg) ![](../../workflows/fpga/badge.svg)
+![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/wokwi_test/badge.svg)
 
-# Tiny Tapeout Wokwi Project Template
+# 1-bit Full Adder
 
-- [Read the documentation for project](docs/info.md)
+## Overview
 
-## What is Tiny Tapeout?
+This circuit implements a 1-bit Full Adder using basic logic gates in Wokwi. Three 1-bit values (A, B and Carry In) are entered via the DIP switch. The circuit then computes the result, which is displayed
+as two basic LEDs (S and Carry Out).
 
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital and analog designs manufactured on a real chip.
+## Inputs
 
-To learn more and get started, visit https://tinytapeout.com.
+- A → Switch 1
+- B → Switch 2
+- C_In → Switch 3
 
-## Wokwi Projects
+## Outputs
 
-Edit the [info.yaml](info.yaml) and change the `wokwi_id` to the ID of your Wokwi project. You can find the ID in the URL of your project, it's the big number after `wokwi.com/projects/`.
+- S → Out0: Result
+- C_Out → Out1: Carry Out
 
-The GitHub action will automatically fetch the digital netlist from Wokwi and build the ASIC files.
+## How to Use
 
-## Enable GitHub actions to build the results page
-
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
-
-## Resources
-
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-- [Build your design locally](https://www.tinytapeout.com/guides/local-hardening/)
-
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@tinytapeout](https://twitter.com/tinytapeout)
+Flip the DIP switches 1-3 to set the inputs of the circuit. The result is shown at the two output LEDs.
